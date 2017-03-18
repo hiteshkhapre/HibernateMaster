@@ -30,9 +30,9 @@ public class ContactManager {
 //		Contact contact1 = new Contact("Nam", "hainatu@gmail.com", "Vietnam", "0904277091");
 //		session.persist(contact1);
 //
-//		Contact contact2 = new Contact("Bill", "bill@gmail.com", "USA", "18001900");
-//		Serializable id = session.save(contact2);
-//		System.out.println("created id: " + id);
+		Contact contact2 = new Contact("Bill", "bill@gmail.com", "USA", "18001900");
+		Serializable id = session.save(contact2);
+		System.out.println("created id: " + id);
 //		
 //		// loads a new object from database
 //		Contact contact3 = (Contact) session.get(Contact.class, new Integer(1));
@@ -47,9 +47,9 @@ public class ContactManager {
 //		System.out.println("Contact4's name: " + contact4.getName());
 //		
 //		// updates a loaded instance of a Contact object
-		Contact contact5 = (Contact) session.load(Contact.class, new Integer(2));
-		contact5.setTelephone("1234567890");
-		session.update(contact5);
+//		Contact contact5 = (Contact) session.load(Contact.class, new Integer(2));
+//		contact5.setTelephone("1234567890");
+//		session.update(contact5);
 //
 //		// updates a detached instance of a Contact object
 //		Contact contact6 = new Contact(3, "Jobs", "jobs@applet.com", "Cupertino", "0123456789");
